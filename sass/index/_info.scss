@@ -1,0 +1,86 @@
+.info{
+    &__wrapper{
+        margin-top: 120px;
+        margin-bottom: 134px;
+    }
+    &__title{
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 86px;
+        color: $black;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__video{
+        &-big{
+            .video__big{
+                // z-index: 2;
+                // display: grid;
+                // position: relative;
+                margin-bottom: 30px;
+                &-pause{
+                    z-index: 1;
+                    
+                    // left: 45%;
+                    // bottom: 50%;
+                }
+            }
+        }
+        &-small{
+            @include flex;
+            .small__first{
+                z-index: 1;
+                &-pause{
+                    z-index: 2;
+                }
+            }
+        }
+    }
+    &__block{
+
+    }
+    &__card{
+        @include flex;
+        margin-top: 72px;
+        .left{
+            .card-img{
+                width: 598px;
+            }
+            &__title{
+                max-width: 454px;
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 100px;
+                line-height: 96%;
+                color: $black;
+                &-thin{
+                    font-family: 'Century Gothic';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 100px;
+                    line-height: 96%;
+                    color: $black;
+                    margin-top: 20px;
+                }
+            }
+            &__text{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 34px;
+                color: $black;
+                max-width: 598px;
+                &-thin{
+                    
+                }
+                &-bold{
+                    font-weight: 700; 
+                }
+            }
+        }
+    }
+}

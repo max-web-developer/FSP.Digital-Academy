@@ -1,0 +1,115 @@
+.header {
+    background: url("../../assets/images/index/header/bg.svg") center center / cover no-repeat;
+    padding: 90px 0 160px 0;
+
+    &-block {
+        @include flex;
+        align-items: center;
+
+        // menu/
+        &__menu {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            list-style-type: none;
+
+            // &-block__menu-item{
+            // }
+            &-link {
+                text-decoration: none;
+                color: $white;
+                font-size: 20px;
+                font-family: Century Gothic;
+                font-style: Bold;
+
+                // &:hover{
+                //     color: $bg;
+                //     background-color: $white;
+                //     border-radius: 40%;
+                // }
+            }
+
+        }
+
+        // info
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            gap: 20px;
+
+            &-label {
+                color: $white;
+
+                &-select {
+                    background-color: $bg;
+                    width: 20px;
+                    color: $white;
+                }
+            }
+
+            &-call {
+                font-size: 28px;
+                color: $white;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 20px;
+                    font-family: Century Gothic;
+                    font-style: Bold;
+                }
+
+                // &::before{
+                //     content: "📞";    
+
+                // }
+            }
+        }
+
+    }
+
+    // <!-- future profecion -->
+    &-future {
+        position: relative;
+        margin-top: 60px;
+
+        &-title {
+            margin-top: 100px;
+            font-family: Century Gothic;
+            font-style: Bold;
+            font-size: 90px;
+            color: $white;
+        }
+
+        &__block {
+            margin-top: 100px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+    }
+
+    // ...// video/
+    &-video {
+        &__block {
+            position: relative;
+            height: 500px;
+
+            &-builder {
+                position: absolute;
+                top: 30%;
+            }
+
+            &-pause {
+                position: absolute;
+                top: 90%;
+                left: 45%;
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+}

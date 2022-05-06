@@ -1,0 +1,123 @@
+.search{
+    &__cards{
+        flex-wrap: wrap;
+        @include flex;
+        max-width: 1170px;
+        margin: 0 auto;
+        .card-1:hover{
+            background-color: $bg;
+            transition: 0.3s;
+        }
+        .card:hover{
+            background-color: $bg;
+            transition: 0.3s;
+        }
+        .card-2:hover{
+            background-color: $bg;
+            transition: 0.3s;
+        }
+        .card-3:hover{
+            background-color: $bg;
+            transition: 0.3s;
+        }
+        .card-1{
+            max-width: 597px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            margin-top: 34px;
+            border: solid 2px $bg;
+            padding-bottom: 26px;
+            padding-top: 15px;
+            padding-left: 60px;
+            padding-right: 30px;
+        }
+        .card-2{
+            max-width: 597px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            margin-top: 34px;
+            border: solid 2px $bg;
+            padding-bottom: 26px;
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-right: 75px;
+        }
+        .card-3{
+            max-width: 597px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            margin-top: 34px;
+            border: solid 2px $bg;
+            padding-bottom: 26px;
+            padding-top: 15px;
+            padding-left: 45px;
+            padding-right: 30px;
+        }  
+        .card{
+            padding-left: 26px;
+            padding-bottom: 26px;
+            padding-top: 15px;
+            padding-right: 26px;
+            // background-color: #F65C2C;
+            max-width: 597px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            margin-top: 34px;
+            border: solid 2px $bg;
+            &__top{
+                &-title{
+                    @include font-style;
+                    font-size: 20px;
+                    line-height: 25px;
+                    color: $black;
+                }
+            }
+            &__middle{
+                align-items: center;
+                @include flex;
+                .send-msg{
+                    @include font-style;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-align: center;
+                    color: #000;
+                    padding-top: 11px;
+                    padding-bottom: 11px;
+                    padding-left: 11px;
+                    padding-right: 11px;
+                    background: #FFFFFF;
+                    border: 2px solid #FF6B00;
+                    box-sizing: border-box;
+                    border-radius: 50px;
+                }
+                &-title{   
+                    font-family: 'Century Gothic';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 31px;
+                    color: $black;
+                    max-width: 247px;
+                }
+            }
+            &__bottom{
+                &-list{
+                    @include flex;
+                    max-width: 527px;
+                    margin-top: 27px;
+                    .list__item{
+                        font-family: 'Century Gothic';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: $white;
+                    }
+                    .list__item:first-child{
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}

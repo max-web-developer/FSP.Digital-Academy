@@ -1,0 +1,35 @@
+@mixin  btn {
+    font-family: Century Gothic;
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 17px;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    width: 245px;
+    height: 60px;
+    background-color: $bg;
+    border-radius: 40px ;
+    border-color: $white;
+    &:hover {
+        opacity: 1;
+      }
+      &:active {
+        position: relative;
+        top: 7px;
+        box-shadow: none;
+      }
+} 
+
+
+@mixin font-style {
+  font-family: 'Century Gothic';
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@mixin flex {
+  justify-content: space-between;
+  display: flex;
+}

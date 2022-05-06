@@ -1,0 +1,137 @@
+@import url(/sass/style.scss);
+.container{
+    width: 1216px;
+    margin: 0 auto;
+}
+@mixin card__title {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #444444;
+}
+@mixin  card__text {
+    font-family: 'Century Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #868686;
+}
+@mixin flex {
+    @include flex;
+}
+
+
+
+.blog{
+    margin-top: 80px;
+    &__wrapper{
+
+    }
+    &__top{
+        @include flex;
+    }
+    &-img{
+        border-radius: 30px;
+        margin-bottom: 12px;
+    }
+    &__middle{
+        @include flex;
+        margin-top: 60px
+    }
+    &__bottom{
+        @include flex;
+        margin-top: 60px
+    }
+    &__card{
+        &-title{
+            @include card__title;
+        }
+        &-titleM{
+            @include card__title;
+            width: 282px
+        }
+        &-text{
+            @include card__text;
+            padding-top: 12px;
+        }
+        &-textM{
+            @include card__text;
+            padding-top: 12px;
+            width: 289px;
+        }
+        &-icons{
+            align-items: center;
+            padding-top: 15px;
+            &_date{
+                @include card__text;
+            }
+            &_icon{
+                @include card__text; 
+                padding-top: 15px; 
+            }
+        }
+    }
+}
+
+     
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.Black{
+    background-image: url(/assets/images/image.png/RectangleBl14.png) ;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.footer{
+    &__wrapper{
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        align-items: center;
+        width: 1100px;
+        &-logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-logo1{
+            padding-right: 15px;
+        }
+    }
+    &__rows{
+        padding-top: 130px;
+        display: flex;
+        justify-content: space-between;
+        .row{
+            &__title{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 49px;
+                color: $white;
+                padding-bottom: 30px;
+            }
+            .list-item{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 37px;
+                color: $white;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+

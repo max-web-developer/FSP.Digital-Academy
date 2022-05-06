@@ -1,0 +1,83 @@
+.direction{
+    &__title{
+        @include font-style;
+        font-size: 50px;
+        line-height: 86px;
+        color: #262626;
+        text-align: center;
+    }
+    &__buttons{
+        @include flex;
+        max-width: 1216px;
+        margin-top: 60px;
+    }
+    .all-btn{
+        @include font-style;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #262626;
+        border: none;
+        border: solid 2px #F65C2C;
+        background-color: $white;
+        border-radius: 50px;
+        padding-top:11px;
+        padding-bottom: 11px;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    .all-btn:hover{
+        background-color: #F65C2C;
+    }
+    .design-btn{
+        @include font-style;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #262626;
+        border: none;
+        border: solid 2px $bg;
+        background-color: $white;
+        border-radius: 50px;
+        padding-top:11px;
+        padding-bottom: 11px;
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .design-btn:hover{
+        background-color: #F65C2C;
+    }
+    .programming-btn{
+        @include font-style;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #262626;
+        border: none;
+        border: solid 2px #F65C2C;
+        background-color: $white;
+        border-radius: 50px;
+        padding-top:11px;
+        padding-bottom: 11px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .programming-btn:hover{
+        background-color: $bg;
+    }
+    .marketing-btn{
+        @include font-style;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        color: #262626;
+        border: none;
+        border: solid 2px $bg;
+        background-color: $white;
+        border-radius: 50px;
+        padding-top:11px;
+        padding-bottom: 11px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}

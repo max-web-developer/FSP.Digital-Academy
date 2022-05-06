@@ -1,0 +1,37 @@
+.education{
+    margin-top: 250px;
+    &__wrapper{
+        max-width: 1216px;
+        margin-top: 500px;
+    }
+    &__title{
+        @include font-style;
+        font-size: 70px;
+        line-height: 86px;
+        color: $black;
+        width: 729px;
+    }
+    .title-thin{
+        @include font-style;
+        font-size: 60px;
+        line-height: 86px;
+        color: $black;
+    }
+    &__cards{
+        @include flex;
+        margin-top: 50px;
+    }
+    .video-lectures{
+        width: 218px;
+    }
+    &__card{
+        text-align: center;
+        &-title{
+            @include font-style;
+            font-size: 25px;
+            line-height: 31px;
+            color: $black;
+            margin-top: 28px;
+        }
+    }
+}

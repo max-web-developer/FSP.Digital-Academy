@@ -1,0 +1,189 @@
+.course{
+    &__wrapper{
+        margin-top: 68px;
+    }
+    &__logotip{
+
+    }
+    &__container{
+        display: flex;
+    }
+    &__left{
+        &-title{
+            @include font-style;
+            font-size: 80px;
+            line-height: 98px;
+            color: $black;
+            margin-bottom: 40px;
+            margin-top: 140px;
+        }
+        &-text{
+            font-family: 'Century Gothic';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $black;
+            width: 598px;
+            margin-bottom: 68px;
+        }
+        .curse-btn{
+            @include font-style;
+            font-size: 17px;
+            line-height: 140%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $white;
+            background-color: $bg;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            padding-left: 38px;
+            padding-right: 38px;
+            border: none;
+            border-radius: 50px;
+        }
+    }
+    &__info{
+        @include flex;
+
+        &-left{
+            &_title{ 
+                @include font-style;
+                font-size: 25px;
+                line-height: 140%;
+                color: $black;
+            }
+            &_text{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 140%;
+                color: $black;
+                &-bold{
+                    font-weight: 700;
+                }
+            }
+        }
+        &-middle{
+            &_title{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 140%;
+                color: $black;
+            }
+            &_text{
+                @include font-style;
+                font-size: 15px;
+                line-height: 18px;
+                color: $black;
+                max-width: 190px;
+                margin-top: 18px;
+            }
+        }
+        &-right{
+            &_title{
+                @include font-style;
+                font-size: 25px;
+                line-height: 140%;
+                color: $black;
+            }
+            &_logotips{
+                margin-top: 18px;
+                width: 185px;
+                @include flex;
+            }
+        }
+    }
+    &__card{
+        margin-top: 96px;
+        background: #FFFFFF;
+        border: 3px solid #FF6B00;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding-left: 88px;
+        &-title{
+            text-align: center;
+            @include font-style;
+            font-size: 50px;
+            line-height: 140%;
+            color: $black;
+        }
+        &-rows{
+            @include flex;
+            max-width: 1057px;
+            &-item{
+                margin: 0 auto;
+                &_title{
+                    margin-top: 20px;
+                    font-family: 'Century Gothic';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 140%;
+                    color: $black;
+                }
+                &_text{
+                    font-family: 'Century Gothic';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 140%;
+                    color: $black;
+                    width: 200px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    &__block{
+        margin-top: 240px;
+        &-top{
+
+        }
+        &-title{
+            @include font-style;
+            font-size: 80px;
+            line-height: 100%;
+            color: $black;
+            width: 640px;
+            margin-bottom: 50px;
+        }
+        &-cards{
+            @include flex;
+            flex-wrap: wrap;
+        }
+        &-card{
+            margin-top: 40px;
+            .block-img{
+                text-align: center ;
+                width: 242px;
+            }
+            &_header{
+                @include font-style;
+                font-size: 50px;
+                line-height: 140%;
+                color: $black;
+            }
+            &_title{
+                @include font-style;
+                font-size: 20px;
+                line-height: 140%;
+                color: $black;
+                margin-bottom: 20px;
+                width: 274px;
+            }
+            &_text{
+                @include font-style;
+                font-size: 15px;
+                line-height: 140%;
+                color: $black;
+                width: 353px;
+            }
+        }
+    }
+}
+

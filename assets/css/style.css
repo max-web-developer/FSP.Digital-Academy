@@ -1,0 +1,1241 @@
+@import url(/assets/fonts/font.scss);
+@import url(/sass/style.scss);
+.btn {
+  font-family: Century Gothic;
+  font-style: Bold;
+  font-weight: 700;
+  font-size: 17px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  width: 245px;
+  height: 60px;
+  background-color: #FF6B00;
+  border-radius: 40px;
+  border-color: #ffffff;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.container {
+  width: 1216px;
+}
+
+@media screen and (min-width: 768.01px) and (max-width: 1000px) {
+  .container {
+    width: 956px;
+  }
+}
+@media screen and (min-width: 768.01px) and (max-width: 480.01px) {
+  .container {
+    width: 956px;
+  }
+}
+.header {
+  background: url("../../assets/images/index/header/bg.svg") center center/cover no-repeat;
+  padding: 90px 0 160px 0;
+}
+.header-block {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.header-block__menu {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style-type: none;
+}
+.header-block__menu-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Century Gothic;
+  font-style: Bold;
+}
+.header-block__info {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+}
+.header-block__info-label {
+  color: #ffffff;
+}
+.header-block__info-label-select {
+  background-color: #FF6B00;
+  width: 20px;
+  color: #ffffff;
+}
+.header-block__info-call {
+  font-size: 28px;
+  color: #ffffff;
+}
+.header-block__info-call a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: Century Gothic;
+  font-style: Bold;
+}
+.header-future {
+  position: relative;
+  margin-top: 60px;
+}
+.header-future-title {
+  margin-top: 100px;
+  font-family: Century Gothic;
+  font-style: Bold;
+  font-size: 90px;
+  color: #ffffff;
+}
+.header-future__block {
+  margin-top: 100px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.header-video__block {
+  position: relative;
+  height: 500px;
+}
+.header-video__block-builder {
+  position: absolute;
+  top: 30%;
+}
+.header-video__block-pause {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__block {
+  display: flex;
+  align-items: center;
+}
+.modal__blocks {
+  justify-content: space-between;
+  display: flex;
+}
+.modal__dialog {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.modal__content {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  font-size: 30px;
+  color: #000;
+  opacity: 0.5;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal__title {
+  font-family: Century Gothic;
+  font-style: Bold;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.modal__input {
+  display: block;
+  margin: 40px auto 20px auto;
+  width: 500px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-color: #FF6B00;
+  font-size: 18px;
+  padding: 0 20px;
+  outline: none;
+}
+.modal__input-1 {
+  display: block;
+  margin: 40px auto 20px auto;
+  width: 500px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-color: #FF6B00;
+  font-size: 18px;
+  padding: 0 20px;
+  outline: none;
+}
+.modal__input-2 {
+  display: block;
+  margin: 40px auto 20px auto;
+  width: 300px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border-color: #FF6B00;
+  font-size: 18px;
+  padding: 0 20px;
+  outline: none;
+}
+.modal .btn {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.slider {
+  margin-top: 100px;
+  max-width: 100%;
+  position: relative;
+}
+.slider__item {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important;
+}
+.slider__item-title {
+  font-family: "Lucida Sans Regular";
+  font-size: 100px;
+  line-height: 123px;
+}
+.slider__item-title span {
+  font-family: "Century Gothic";
+}
+.slider__item-name {
+  margin-top: 190px;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+.slider__item-job {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+}
+.slider__item-circle {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  right: 1%;
+}
+.slider__item-women {
+  position: absolute;
+  z-index: 2;
+  top: -3%;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 60%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  z-index: 1;
+  top: 60%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px 0 0 3px;
+}
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.direction__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 86px;
+  color: #262626;
+  text-align: center;
+}
+.direction__buttons {
+  justify-content: space-between;
+  display: flex;
+  max-width: 1216px;
+  margin-top: 60px;
+}
+.direction .all-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #262626;
+  border: none;
+  border: solid 2px #F65C2C;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+.direction .all-btn:hover {
+  background-color: #F65C2C;
+}
+.direction .design-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #262626;
+  border: none;
+  border: solid 2px #FF6B00;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 65px;
+  padding-left: 65px;
+}
+.direction .design-btn:hover {
+  background-color: #F65C2C;
+}
+.direction .programming-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #262626;
+  border: none;
+  border: solid 2px #F65C2C;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.direction .programming-btn:hover {
+  background-color: #FF6B00;
+}
+.direction .marketing-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #262626;
+  border: none;
+  border: solid 2px #FF6B00;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.search__cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.search__cards .card-1:hover {
+  background-color: #FF6B00;
+  transition: 0.3s;
+}
+.search__cards .card:hover {
+  background-color: #FF6B00;
+  transition: 0.3s;
+}
+.search__cards .card-2:hover {
+  background-color: #FF6B00;
+  transition: 0.3s;
+}
+.search__cards .card-3:hover {
+  background-color: #FF6B00;
+  transition: 0.3s;
+}
+.search__cards .card-1 {
+  max-width: 597px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 34px;
+  border: solid 2px #FF6B00;
+  padding-bottom: 26px;
+  padding-top: 15px;
+  padding-left: 60px;
+  padding-right: 30px;
+}
+.search__cards .card-2 {
+  max-width: 597px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 34px;
+  border: solid 2px #FF6B00;
+  padding-bottom: 26px;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 75px;
+}
+.search__cards .card-3 {
+  max-width: 597px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 34px;
+  border: solid 2px #FF6B00;
+  padding-bottom: 26px;
+  padding-top: 15px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+.search__cards .card {
+  padding-left: 26px;
+  padding-bottom: 26px;
+  padding-top: 15px;
+  padding-right: 26px;
+  max-width: 597px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 34px;
+  border: solid 2px #FF6B00;
+}
+.search__cards .card__top-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(38, 38, 38);
+}
+.search__cards .card__middle {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.search__cards .card__middle .send-msg {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  background: #FFFFFF;
+  border: 2px solid #FF6B00;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.search__cards .card__middle-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  color: rgb(38, 38, 38);
+  max-width: 247px;
+}
+.search__cards .card__bottom-list {
+  justify-content: space-between;
+  display: flex;
+  max-width: 527px;
+  margin-top: 27px;
+}
+.search__cards .card__bottom-list .list__item {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.search__cards .card__bottom-list .list__item:first-child {
+  color: rgb(38, 38, 38);
+}
+
+.education {
+  margin-top: 250px;
+}
+.education__wrapper {
+  max-width: 1216px;
+  margin-top: 500px;
+}
+.education__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 86px;
+  color: rgb(38, 38, 38);
+  width: 729px;
+}
+.education .title-thin {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 86px;
+  color: rgb(38, 38, 38);
+}
+.education__cards {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 50px;
+}
+.education .video-lectures {
+  width: 218px;
+}
+.education__card {
+  text-align: center;
+}
+.education__card-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  color: rgb(38, 38, 38);
+  margin-top: 28px;
+}
+
+.info__wrapper {
+  margin-top: 120px;
+  margin-bottom: 134px;
+}
+.info__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 86px;
+  color: rgb(38, 38, 38);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.info__video-big .video__big {
+  margin-bottom: 30px;
+}
+.info__video-big .video__big-pause {
+  z-index: 1;
+}
+.info__video-small {
+  justify-content: space-between;
+  display: flex;
+}
+.info__video-small .small__first {
+  z-index: 1;
+}
+.info__video-small .small__first-pause {
+  z-index: 2;
+}
+.info__card {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 72px;
+}
+.info__card .left .card-img {
+  width: 598px;
+}
+.info__card .left__title {
+  max-width: 454px;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 96%;
+  color: rgb(38, 38, 38);
+}
+.info__card .left__title-thin {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 100px;
+  line-height: 96%;
+  color: rgb(38, 38, 38);
+  margin-top: 20px;
+}
+.info__card .left__text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgb(38, 38, 38);
+  max-width: 598px;
+}
+.info__card .left__text-bold {
+  font-weight: 700;
+}
+
+.registr__wrapper {
+  margin-bottom: 130px;
+}
+.registr__card {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px rgba(38, 38, 38, 0.1);
+  border-radius: 50px;
+}
+.registr__card-block {
+  max-width: 1030px;
+  padding-left: 130px;
+  padding-right: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.registr .card__top {
+  justify-content: space-between;
+  display: flex;
+}
+.registr .card__middle {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+}
+.registr .small__input {
+  border: 2px solid #FF6B00;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 50px;
+  padding-right: 198px;
+  max-width: 392px;
+}
+.registr .big__input {
+  border: 2px solid #FF6B00;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  color: rgb(38, 38, 38);
+  line-height: 27px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 50px;
+  padding-right: 198px;
+  max-width: 578px;
+  margin-bottom: 20px;
+}
+.registr .registr-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  background-color: #F65C2C;
+  border: none;
+  border: solid 2px #FF6B00;
+  color: #ffffff;
+  border-radius: 50px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 65px;
+  padding-left: 65px;
+  margin-top: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-image: url(/assets/images/index/footer/Rectangle\ 14.png);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.footer__bottom {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  align-items: center;
+  width: 1100px;
+}
+.footer__bottom-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom-logo1 {
+  padding-right: 15px;
+}
+.footer__rows {
+  padding-top: 130px;
+  justify-content: space-between;
+  display: flex;
+}
+.footer__rows .row__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 49px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.footer__rows .row .list-item {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.abautUs {
+  margin-top: 300px;
+}
+.abautUs-all__block {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.abautUs-all__block-img {
+  text-align: center;
+}
+.abautUs-all__block-info-text {
+  font-family: Century Gothic;
+  font-style: Bold;
+  font-size: 40px;
+  color: rgb(38, 38, 38);
+}
+.abautUs-all__block-info-subtitle {
+  margin-top: 10px;
+  font-family: Century Gothic;
+  font-style: Bold;
+  font-size: 20px;
+  color: rgb(38, 38, 38);
+}
+
+.course__wrapper {
+  margin-top: 68px;
+}
+.course__container {
+  display: flex;
+}
+.course__left-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 98px;
+  color: rgb(38, 38, 38);
+  margin-bottom: 40px;
+  margin-top: 140px;
+}
+.course__left-text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgb(38, 38, 38);
+  width: 598px;
+  margin-bottom: 68px;
+}
+.course__left .curse-btn {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #FF6B00;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 38px;
+  padding-right: 38px;
+  border: none;
+  border-radius: 50px;
+}
+.course__info {
+  display: flex;
+  justify-content: space-between;
+}
+.course__info-left_title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__info-left_text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__info-left_text-bold {
+  font-weight: 700;
+}
+.course__info-middle_title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__info-middle_text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgb(38, 38, 38);
+  max-width: 190px;
+  margin-top: 18px;
+}
+.course__info-right_title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__info-right_logotips {
+  margin-top: 18px;
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+}
+.course__card {
+  margin-top: 96px;
+  background: #FFFFFF;
+  border: 3px solid #FF6B00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding-left: 88px;
+}
+.course__card-title {
+  text-align: center;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__card-rows {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1057px;
+}
+.course__card-rows-item {
+  margin: 0 auto;
+}
+.course__card-rows-item_title {
+  margin-top: 20px;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__card-rows-item_text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+  width: 200px;
+  margin-bottom: 30px;
+}
+.course__block {
+  margin-top: 240px;
+}
+.course__block-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
+  color: rgb(38, 38, 38);
+  width: 640px;
+  margin-bottom: 50px;
+}
+.course__block-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.course__block-card {
+  margin-top: 40px;
+}
+.course__block-card .block-img {
+  text-align: center;
+  width: 242px;
+}
+.course__block-card_header {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+}
+.course__block-card_title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+  margin-bottom: 20px;
+  width: 274px;
+}
+.course__block-card_text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  color: rgb(38, 38, 38);
+  width: 353px;
+}
+
+.article {
+  width: 100%;
+  font-family: Century Gothic;
+}
+.article__title {
+  font-size: 20px;
+  line-height: 61px;
+  color: rgb(38, 38, 38);
+  font-family: Century Gothic;
+}
+.article__paragraph {
+  font-size: 20px;
+  line-height: 37px;
+  /* identical to box height */
+  color: rgb(38, 38, 38);
+  font-family: Century Gothic;
+}
+.article__number {
+  font-size: 20px;
+  line-height: 37px;
+  /* identical to box height */
+  color: rgb(38, 38, 38);
+  font-family: Century Gothic;
+}
+.article__number span {
+  margin-left: 10px;
+  font-weight: 400;
+  font-family: Century Gothic;
+}
+.article__number img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.content__img img {
+  width: 100%;
+}
+.content__title2 {
+  font-size: 15px;
+  line-height: 31px;
+  color: rgb(38, 38, 38);
+  font-family: Century Gothic;
+}
+.content__p {
+  font-size: 20px;
+  line-height: 27px;
+  color: black;
+  font-family: Century Gothic;
+}
+
+.articles__arts {
+  display: flex;
+  justify-content: space-between;
+}
+.articles__art {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.articles__art img {
+  margin-bottom: 30px;
+}
+.articles__comments {
+  display: flex;
+}
+.articles__comments p {
+  font-size: 15px;
+  line-height: 18px;
+  color: rgb(38, 38, 38);
+  margin: 22px 0px 100px 25px;
+  font-family: Century Gothic;
+}
+
+.mask__img {
+  margin-right: 220px;
+  display: flex;
+}
+.mask__p2 {
+  font-size: 15px;
+  color: rgb(38, 38, 38);
+  margin: 22px 0px 100px 25px;
+  margin-left: 30px;
+  font-family: Century Gothic;
+}
+
+.container {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.blog {
+  margin-top: 80px;
+}
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-img {
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+.blog__middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.blog__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.blog__card-title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #444444;
+}
+.blog__card-titleM {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #444444;
+  width: 282px;
+}
+.blog__card-text {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #868686;
+  padding-top: 12px;
+}
+.blog__card-textM {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #868686;
+  padding-top: 12px;
+  width: 289px;
+}
+.blog__card-icons {
+  align-items: center;
+  padding-top: 15px;
+}
+.blog__card-icons_date {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #868686;
+}
+.blog__card-icons_icon {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #868686;
+  padding-top: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Black {
+  background-image: url(/assets/images/image.png/RectangleBl14.png);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  align-items: center;
+  width: 1100px;
+}
+.footer__bottom-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__bottom-logo1 {
+  padding-right: 15px;
+}
+.footer__rows {
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__rows .row__title {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 49px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.footer__rows .row .list-item {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

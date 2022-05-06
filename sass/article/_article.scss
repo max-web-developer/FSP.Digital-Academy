@@ -1,0 +1,94 @@
+@import url(/assets/fonts/font.scss);
+.article{
+    width: 100%;
+    font-family: Century Gothic;
+    &__title {
+        // width: 100%;
+        font-size: 20px;
+        line-height: 61px;
+        color: $black;
+        font-family: Century Gothic;
+    }
+    &__paragraph {
+        font-size: 20px;
+        line-height: 37px;
+        /* identical to box height */
+        color: $black;
+        font-family: Century Gothic;
+    }
+    &__number {
+        font-size: 20px;
+        line-height: 37px;
+        /* identical to box height */
+        color: $black;
+        font-family: Century Gothic;
+        span {
+            margin-left: 10px;
+            font-weight: 400;
+            font-family: Century Gothic;
+        }
+        img{
+            width: 50px;
+            margin-left: 10px;
+        }
+    }
+}
+.content{
+    &__img img{
+        width: 100%;
+    }
+    &__title2 {
+        font-size: 15px;
+        line-height: 31px;
+        color: $black;
+        font-family: Century Gothic;
+    }
+    &__p{
+        font-size: 20px;
+        line-height: 27px;
+        color: black;
+        font-family: Century Gothic;
+    }
+}
+.articles{
+    &__arts{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__art {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img{
+            margin-bottom: 30px;
+        }
+    }
+    &__comments{
+        display: flex;
+        // justify-content: space-between;
+        p{
+            font-size: 15px;
+            line-height: 18px;
+            color:$black;
+            margin: 22px 0px 100px 25px;
+            font-family: Century Gothic;
+        }
+        
+    }
+    
+    
+}
+.mask {
+    &__img{ margin-right: 220px;
+        // width: 1000px;
+        display: flex;
+    }
+    &__p2{
+        font-size: 15px;
+        // line-height: 18px;
+        color: $black;
+        margin: 22px 0px 100px 25px;
+        margin-left: 30px;
+        font-family: Century Gothic;
+    }
+}

@@ -1,0 +1,57 @@
+@import "mixins/mixin";
+@import "mixins/variables";
+// @import  "blog/blog";
+
+.btn {
+    @include btn
+}
+body {
+    margin: 0;
+}
+.container{
+    width: 1216px;
+    margin: 0 auto;
+}
+.show {
+    display: block;
+}
+
+.hide {
+    display: none
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.container{
+    width: 1216px;
+}
+
+@media screen and (min-width: 768.01px) and (max-width: 1000px) {
+    .container{
+        width: 956px;
+    }
+}
+@media screen and (min-width: 768.01px) and (max-width: 480.01px) {
+    .container{
+        width: 956px;
+    }
+}
+
+
+@import "index/header";
+@import "index/modal";
+@import "index/slider";
+@import "index/direction";
+@import "index/search";
+@import "index/education";
+@import "index/info";
+@import "index/registr";
+@import "index/footer";
+
+@import "abautUs/about";
+@import "course/course";
+@import "article/article";
+@import "blog/blog";

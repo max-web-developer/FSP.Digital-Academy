@@ -1,0 +1,50 @@
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    background-image: url(/assets/images/index/footer/Rectangle\ 14.png) ;
+    margin: 0 auto;
+    margin-top: 80px;
+    &__wrapper{
+    }
+    &__bottom{
+        @include flex;
+        padding-top: 90px;
+        padding-bottom: 30px;
+        align-items: center;
+        width: 1100px;
+        &-logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-logo1{
+            padding-right: 15px;
+        }
+    }
+    &__rows{
+        padding-top: 130px;
+        @include flex;
+        .row{
+            &__title{
+                @include font-style;
+                font-size: 50px;
+                line-height: 49px;
+                color: $white;
+                padding-bottom: 30px;
+            }
+            .list-item{
+                font-family: 'Century Gothic';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 37px;
+                color: $white;
+                margin-top: 20px;
+            }
+        }
+    }
+}
